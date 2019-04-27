@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    background-color: #eee;
+    font-weight: 400;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#header{
+    width: 100vw;
+    display: block;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 3rem;
+    letter-spacing: .2rem; 
+}
+        @media (max-width:480px){
+    #header{
+        width: 95vw;
+        display: grid;
+        text-align: left;
+        line-height: 1.5rem;
+        padding: 1rem;
+        letter-spacing: .2rem; 
+    }
+    #header__primary,#header__secondary{
+        display: flex;
+        line-height: 2rem;
+    }
+    #header__secondary{
+        font-size: 95%;
+    }
+    main{
+        margin-bottom: 5rem;
+    }
+
+        }
+
+.container{
+    height: auto;
+    display: flex;
+}
+main{
+    margin-bottom: 2.5rem;
+}
+.box{
+    padding:0;
+    margin: 1rem;
+    width: 80%;
+    border: 2px solid black;
+    padding:2px;
+}
+.image{
+    background-size: auto;
+    width: 100%;
+}
+#text{
+    position: relative;
+}
+#text-box{
+    position: absolute;
+    left:20%;
+    display:block;
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    font-size: 1.2rem;
+    color: maroon;
+    padding-top: 1rem;
+}
+#text-box:disabled{
+    background: linear-gradient(to right,pink,#ccc) ;
+}
